@@ -1,0 +1,479 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+body, html {
+    height: 100%; 
+    font-family: 'Arial', sans-serif; 
+    background: white;
+}
+
+
+header {
+    width: 100%;
+    color: #fff; 
+    padding: 1rem; 
+    display: flex; 
+    align-items: center; 
+    background-color: black;
+}
+.navbar ul li a{
+    color: white;
+}
+
+.navbar-brand{
+    margin-right: auto; 
+
+}
+.navbar-brand img{
+    width: 6.25rem;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-nav ul li{
+    justify-content: space-around;
+}
+
+header nav {
+    color: white;
+    display: flex; 
+    width: 100%; 
+    height: 5vh;
+    align-items: center;
+}
+
+
+
+
+main .content-section {
+    display: flex; 
+    justify-content: space-between; 
+    background-color: #000000; 
+}
+
+
+main .content-column {
+    flex-basis: calc(33.333% - 2px); 
+    background-color:rgb(0, 0, 0);
+}
+.content-section img{
+    width:100%;
+    height: 31.25rem;
+}
+
+main .content-divider {
+    margin: 0; 
+    width: 2px; 
+    background-color: #000; 
+    height: 500px;
+}
+
+
+main .banner {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #000; 
+    padding: 1rem; 
+}
+
+main .round-image {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 3px solid #fff; 
+}
+
+
+main .row-divider {
+    height: 2px; 
+    background-color: #000; 
+}
+
+
+main .row h2 {
+    font-size: 1.5rem; 
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+position: relative;
+bottom: 0;
+padding: 1.25rem;
+padding-left: 12.5rem;
+border: #ffffff8f solid 1px;
+
+}
+
+
+.footer-section{
+    width: 100%;
+    height: 3.125rem;
+    color: white;
+    justify-content: space-around;
+}
+
+.social-icons{
+    display: flex;
+width: 100%;
+}
+.social-icons img{
+width: 40px;
+background-color: white;
+padding: .125rem;
+}
+
+.card-section{
+width: 100%;
+background-color: black;
+color: white ;
+flex-direction: row;
+align-items: center;
+gap: 1.25rem;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+@media (max-width: 768px) {
+    
+    header nav ul {
+        flex-direction: column; 
+    }
+
+    
+    main .content-section {
+        flex-direction: column; 
+    }
+
+    
+    main .content-column,
+    main .banner {
+        margin: 0.5rem 0; 
+    }
+
+
+    footer {
+        flex-direction: column; 
+        position: absolute;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 1280px){
+    header nav ul {
+        flex-direction: row; 
+        justify-content: space-around; 
+        flex-wrap: wrap; 
+    }
+
+    header nav a {
+        padding: 0.5rem; 
+        font-size: 0.9rem; 
+    }
+
+    
+    main .content-section {
+        flex-wrap: nowrap; 
+    }
+
+    main .content-column {
+        
+        flex: 1;
+        max-width: calc(33.333% - 10px); 
+        margin: 0 5px; 
+        height: 15vh; 
+    }
+
+    
+    main .content-divider {
+        display: block; 
+        height: 100%; 
+        min-height: 50px;
+        height: 15vh; 
+    }
+
+    
+    main .banner {
+        justify-content: space-between; 
+    }
+    main .round-image{
+        
+        width: 80px; 
+        height: 80px; 
+        margin: 10px; 
+    }
+
+    
+    footer .footer-section {
+        text-align: center; 
+        padding: 0 10px; 
+        
+    }
+
+    footer .footer-socials .social-icons {
+        justify-content: center; 
+        padding-top: 0; 
+    }
+
+    footer .footer-socials {
+        order: 1; 
+    }
+
+    footer .footer-section:first-child {
+        order: -1;
+    }
+}
+
+/*CONTACTO*/
+.body-contacto{
+    background-image: url(https://images.unsplash.com/photo-1569083366337-beef9f92f894?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3ZlcnNpemV8ZW58MHx8MHx8fDA%3D);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+.body-info{
+    margin: 0;
+    padding: 0;
+    background-image:url(https://images.unsplash.com/photo-1514311548104-ae305aac4688?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9wYSUyMHVyYmFuYSUyMCUyMG1vZGVsb3N8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.titulo-contactos{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: .625rem;
+}
+section h1{
+    color: white;
+}
+.titulo-contactos h1{
+    width: 100%;
+    display: flex;
+    color: white;
+    font-size: 4.5rem;
+    justify-content: center;
+    margin: 3.125rem;
+}
+.titulo-contactos h3 a{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font
+}
+.titulo-contactos span{
+    padding: .125rem 0px 0px .25rem;
+    font-size:1.125rem;
+    display:flex;
+    justify-content:center;
+    color:white;
+}
+
+.contactos h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    margin-top: 3.125rem;
+}
+
+.redes li{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 1.25rem;
+    font-size: 1.25rem;
+}
+
+.redes li img{
+display: flex;
+justify-content: center;
+width: 30px;
+margin-right: 10px;
+background-color: rgba(255, 255, 255, 0.623);
+border-radius: .625rem;
+}
+.contactos-ul li{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin: 1.25rem;
+    font-size: 1.25rem;
+}
+.contactos-ul li img{
+    width: 32px;
+    margin-right: .625rem;
+    margin-bottom: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 1.25rem;
+}
+
+
+
+
+/*INFO*/
+html{
+    position: relative;
+}
+main{
+    width: 100%;
+
+
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding-top: 3.125rem;
+
+}
+
+
+.title h3 a{
+    color: white;
+    text-decoration: none;
+}
+
+.title span{
+    padding-top: .125rem;
+    color: white;
+    font-size: 1.125rem;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 6.25rem;
+    color:white;
+    margin: 1.875rem;
+}
+.recuadros{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.445);
+    position: absolute;
+    bottom: 15.625rem;
+    justify-content: space-around;
+
+    
+}
+
+.recuadro1{
+width: 31.25rem;
+height: 80%;
+    margin: 2.5rem;
+    border: .125rem solid black;
+}
+
+.recuadro1 ul{
+    display: grid;
+    gap: .625rem;
+    font-size: 1.375rem;
+
+}
+
+.recuadro1 h3{
+    font-size: 2rem;
+    border-bottom:.125rem solid black;
+}
+
+.recuadro2{
+    margin: 2.5rem;
+    width: 31.25rem;
+    height: 80%;
+    border: .125rem solid black;
+    border
+}
+
+
+.recuadro2 h3{
+    font-size: 2rem;
+    border-bottom:.125rem solid black;
+}
+
+.recuadro2 ul{
+    display: grid;
+    gap: .625rem;
+    font-size: 1.375rem;
+}
+
+/*TIENDA*/
+
+.cards-tienda{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+margin: .625rem;
+}
+
+.card{
+    width: 100%;
+    margin: .625rem;
+}
+
+.cards-tienda-2{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+margin: .625rem;
+}
+.cards-tienda-2 .card{
+    flex-wrap: wrap-reverse;
+
+}
+
+
+.tabla{
+    width: 20%;
+    border: .125rem solid black;
+    margin: 3.125rem;
+    padding: .3125rem;
+}
+.tabla h3{
+    font-size: 1.375rem;
+    padding-left: .625rem;
+    border-bottom: solid .0625rem black;
+}
+
+.tabla ul{
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: .625rem;
+
+    
+}
+.tabla ul li{
+    padding: .3125rem;
+
+}
+
+
+
+
